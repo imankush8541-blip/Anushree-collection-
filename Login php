@@ -1,0 +1,60 @@
+<?php
+// Start session
+session_start();
+
+// If already logged in → go to admin panel
+if (isset($_SESSION['admin'])) {
+    header("Location: panel.php");
+    exit;
+}
+
+// Check login submission
+$error = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $password = $_POST['password'];
+
+    // Your chosen password
+    $correctPassword = "Anushree@69";
+
+    if ($password === $correctPassword) {
+        $_SESSION['admin'] = true;   // Login success
+        header("Location: panel.php");
+        exit;
+    } else {
+        $error = "Incorrect password!";
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login – Anushree Collection</title>
+    <link rel="stylesheet" href="../../assets/styles.css">
+</head>
+
+<body>
+
+    <section class="section">
+        <h2>Admin Login</h2>
+
+        <?php if (!empty($error)) { ?>
+            <p class="success-msg" style="color:red;"><?php echo $error; ?></p>
+        <?php } ?>
+
+        <form method="POST" class="contact-form">
+
+            <label>Enter Password</label>
+            <input type="password" name="password" required>
+
+            <button type="submit" class="btn">Login</button>
+
+        </form>
+    </section>
+
+</body>
+</html>
