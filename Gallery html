@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery – Anushree Collection</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">AC</div>
+        <h1>Anushree Collection</h1>
+        <p class="tagline">Your Family’s Fashion Destination</p>
+
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="collections.html">Collections</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.php">Contact</a>
+        </nav>
+    </header>
+
+    <!-- GALLERY SECTION -->
+    <section class="section">
+        <h2>Our Gallery</h2>
+        <p>Explore images from our store and collections.</p>
+
+        <div class="grid gallery-grid">
+
+            <img src="https://images.unsplash.com/photo-1495121605193-b116b5b09d79?q=80&w=800&auto=format&fit=crop" />
+            <img src="https://images.unsplash.com/photo-1520975914720-2a9d4b6b31ba?q=80&w=800&auto=format&fit=crop" />
+            <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop" />
+            <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=800&auto=format&fit=crop" />
+
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=800&auto=format&fit=crop" />
+            <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?q=80&w=800&auto=format&fit=crop" />
+            <img src="https://images.unsplash.com/photo-1602810317634-8f4a3d3e7f2d?q=80&w=800&auto=format&fit=crop" />
+            <img src="https://images.unsplash.com/photo-1520975914720-2a9d4b6b31ba?q=80&w=800&auto=format&fit=crop" />
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2025 Anushree Collection — All Rights Reserved</p>
+        <p>
+            <a href="https://www.instagram.com/anushreecollection9" target="_blank">Instagram</a>
+            |
+            <a href="contact.php">Contact</a>
+        </p>
+    </footer>
+
+</body>
+</html>
